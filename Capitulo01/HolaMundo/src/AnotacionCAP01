@@ -1,0 +1,31 @@
+Primitivos
+========================================================================
+TIPOS ESCALARES
+ENTEROS:
+    BYTE(1 BYTE): 8 BITS - entre -128 a127, Valor por defecto: 0
+    SHORT (2 bytes): 16 BITS -  -32768 a 32767, Valor por defecto: 0
+    INT (4 bytes): 32 BITS -  -2147483648 a 2147483647 : -2^32 a 2^32, Clase equivalente: "INTEGER", Valor por defecto: 0
+    LONG (8 bytes): 64 BITS -  -2^64 a 2^64, Valor por defecto: 0l
+FLOTANTE
+    FLOAT 32 BITS: Precision Simple, todos los numero deben tener la letra(f) al final, Valor por defecto: 0.0f
+       Muestra valores en forma compacta (notación científica) con mayor precision y mas decimales
+       Mostrar por notación científica.
+        ===============================
+        1.5e4f = e:10 -> (e^4) * 1.5 y corremos 4 ceros a la derecha = 15000.0
+        1.5e-10f = e:10 -> (e^10) * 1.5 y corremos 10 ceros a la izquierda por que es negativo = 0.00000000015f
+        PARTES: (1.5): mantisa, e: exponente, -10: valor, f: tipo,  0.00000000015f: valor de punto fijo
+    DOUBLE 64 BITS : Doble precision, Los numero con punto son double de manera implicita, Valor por defecto: 0.0d
+        Cuando un numero tiene decimal siempre es interpretada como "double" por defecto.
+
+CARACTERES:
+    Cada carácter ocupa 16bits
+    --Basada en
+    --char (1 byte): 8 BITS
+    --Clase equivalente CHARACTER
+    --Valor por defecto "null" o u0000 - código UNICODE
+    --Puede contener código UNICODE '\U0021'
+BOOLEAN:
+    Tipo mas simple de un solo bit
+
+    Valor por defecto "false"
+
