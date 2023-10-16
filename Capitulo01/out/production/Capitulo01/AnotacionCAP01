@@ -18,13 +18,17 @@ FLOTANTE
         Cuando un numero tiene decimal siempre es interpretada como "double" por defecto.
 
 CARACTERES:
-    Cada carácter ocupa 16bits
-    --Basada en
-    --char (1 byte): 8 BITS
-    --Clase equivalente CHARACTER
-    --Valor por defecto "null" o u0000 - codigo UNICODE
-    --Puede contener código UNICODE '\U0021'
+    Cada carácter ocupa 16bits. Se declara con comillas simples.
+    -Basa en el estándar de carácteres UNICODE que también es manejado por nuestro sistema Operativo
+    -Interpreta el código UNICODE de varias maneras: char carácter = '\u0040';char decimal = 64;char símbolo = '@';
+        Todas ellas imprime arroba(@)
+    -char (2 byte): 16 BITS
+    -Clase equivalente CHARACTER
+    -Valor por defecto "null" o u0000 - código UNICODE
+    -Puede contener código UNICODE '\U0021'
+    -Podemos colocar el valor decimal de los caracteres UNICODE
 BOOLEAN:
     Tipo mas simple de un solo bit
+
     Valor por defecto "false"
 
