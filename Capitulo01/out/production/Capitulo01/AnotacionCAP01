@@ -29,6 +29,11 @@ CARACTERES:
     -Podemos colocar el valor decimal de los caracteres UNICODE
 BOOLEAN:
     Tipo mas simple de un solo bit
-
     Valor por defecto "false"
+
+Sistemas Numéricos
+============================================================================
+Convercion de decimales a numéricos
+-Integer.toBinaryString("decimal") : Convierto numero decimal a string con representación binaria
+
 

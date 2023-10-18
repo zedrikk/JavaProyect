@@ -29,6 +29,15 @@ CARACTERES:
     -Podemos colocar el valor decimal de los caracteres UNICODE
 BOOLEAN:
     Tipo mas simple de un solo bit
-
     Valor por defecto "false"
+
+Sistemas Numéricos
+============================================================================
+Convercion de decimales a numéricos
+-Integer.toBinaryString("decimal") : Convierto numero decimal a string con representación binaria
+-Integer.toOctalString("decimal") :  Convierto numero decimal a string con representación octal
+-Integer.toHexString("decimal") :  Convierto numero decimal a string con representación hexadecimal
+--El numero binario se representa anteponiendo el "0b", el numero octal se representa anteponiendo el "0",
+el numero hexadecimal se representa anteponiendo el "0x".
+
 
