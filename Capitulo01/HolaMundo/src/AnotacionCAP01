@@ -33,11 +33,20 @@ BOOLEAN:
 
 Sistemas Numéricos
 ============================================================================
-Convercion de decimales a numéricos
+Conversión de decimales a numéricos
 -Integer.toBinaryString("decimal") : Convierto numero decimal a string con representación binaria
 -Integer.toOctalString("decimal") :  Convierto numero decimal a string con representación octal
 -Integer.toHexString("decimal") :  Convierto numero decimal a string con representación hexadecimal
 --El numero binario se representa anteponiendo el "0b", el numero octal se representa anteponiendo el "0",
 el numero hexadecimal se representa anteponiendo el "0x".
 
+Scanner: clase de Java que escanea a la linea terminal para obtener parametros de entrada.
+System.in: Representa la entrada de datos por el terminal.
+nextLine: Obtiene la linea actual que el usuario ingresa del tipo String, deja esperando hasta que el usuario ingrese algun valor
+nextInt, nextBool, nextShort : obtienen los datos de la linea de comando y las convierten directamente a sus tipos de valores declarados.
+Exception: Todas las clases de extensiones extienden de "Exception"
 
+1. Para convertir de un de un string a un primitivo siempre usar lo siguiente.
+    wraper(x).parse(cadena): (x = Wraper del primitivo) de String a primitivo
+    wraper(x).toString(valor primitivo): (x = Wraper del primitivo) de Primitivo a string
+    String.valueOf();
