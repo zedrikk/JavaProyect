@@ -31,6 +31,14 @@ BOOLEAN:
     Tipo mas simple de un solo bit
     Valor por defecto "false"
 
+Ventanas de Dialogo
+===========================================================================
+Retorna valores string
+String str = JOptionPane.showInputDialog(Componente padre, "Mensaje");
+int numero = Integer.parseInt(str);
+Muestra mensaje
+JOptionPane.showMessageDialog(null, mensaje)
+
 Sistemas Numéricos
 ============================================================================
 Conversión de decimales a numéricos
@@ -49,4 +57,11 @@ Exception: Todas las clases de extensiones extienden de "Exception"
 1. Para convertir de un de un string a un primitivo siempre usar lo siguiente.
     wraper(x).parse(cadena): (x = Wraper del primitivo) de String a primitivo
     wraper(x).toString(valor primitivo): (x = Wraper del primitivo) de Primitivo a string
-    String.valueOf();
+    String.valueOf(): recibe primitivos que convierte a string
+2. Convertir de primitivo a primitivo
+    (CAST): Forzar la conversion
+    int i = 10000;
+    short x = (short)i; No es posible por que short es mas pequeño que int y habra perdida de datos.
+            aun haci puede ser forzado mediante (casting)
+    long l = i; Es posible convertir ya que long es mas amplio que int y no hay perdida de datos.
+    En primitivos podemos hacer CAST solo a tipos numérico incluyendo a los Reales y CHAR

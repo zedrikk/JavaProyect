@@ -19,5 +19,16 @@ public class ConversionDeTipos {
 
         otroNumeroStr = String.valueOf(otroNumeroInt);
         System.out.println("otroNumeroStr = " + otroNumeroInt);
+
+        int i = 10000;
+        short s = (short)i;
+        System.out.println("s = " + s);
+        long l = i;
+        System.out.println("l = " + l);
+        System.out.println(Short.MAX_VALUE);
+        
+        float f = (float)i;
+        System.out.println("f = " + f);
+
     }
 }
