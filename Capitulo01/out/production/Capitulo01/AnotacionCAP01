@@ -64,3 +64,4 @@ Exception: Todas las clases de extensiones extienden de "Exception"
     short x = (short)i; No es posible por que short es mas pequeño que int y habra perdida de datos.
             aun haci puede ser forzado mediante (casting)
     long l = i; Es posible convertir ya que long es mas amplio que int y no hay perdida de datos.
+    En primitivos podemos hacer CAST solo a tipos numérico incluyendo a los Reales y CHAR
