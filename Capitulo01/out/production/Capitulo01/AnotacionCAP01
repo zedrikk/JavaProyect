@@ -65,3 +65,50 @@ Exception: Todas las clases de extensiones extienden de "Exception"
             aun haci puede ser forzado mediante (casting)
     long l = i; Es posible convertir ya que long es mas amplio que int y no hay perdida de datos.
     En primitivos podemos hacer CAST solo a tipos numérico incluyendo a los Reales y CHAR
+
+String(no primitivo)
+============================================================================
+- Objetos de java, del tipo de referencia, aun que también se pueden representar con una sintaxis mas cómoda(literal)
+    String nombre = new String("Erick"); = String nombre = "Erick";
+- Es una secuencia de caracteres(arreglo) por eso es de tipo por referencia.
+- Para incluir el carácter comillas dobles, se debe escapar "\"" = "Manejo de \"Strings\"";
+- Los caracteres de un String se codifican usando UNICODE
+- Son inmutables, cualquier método usado siempre devuelve una nueva instancia distinta al
+  original con los cambios, el string original se mantiene.
+- El objeto string se crea la instancia a través de la literal
+    String curso = "Programación Java" == String curso = new String("Programación Java")
+COMPARAR
+- Con el operador == compara por referencia
+- Con el método equals() compara por valor
+
+METODOS
+============================================================================
+- Int Length(): Numero de caracteres
+- Boolean equals(String B) : Compara si ambas son iguales por valor
+- Boolean equalsIgnoreCase(String B): Compara si son iguales independientemente de mayúsculas o minúsculas
+- Int compareTo(String B): Compara contra la cadena del argumento, devolviendo:
+    Un valor negativo si la cadena es anterior a B
+    Cero(0) si la cadena es igual a B
+    Un valor positivo si la cadena es posterior a B
+- String Trim(): Crea un nuevo objeto eliminando el espacio en blanco que pudiera haber al principio o final
+- Char CharAt(Int posición): Extrae el carácter en la posición indicada.
+- Char[] toCharArray(): Convierte la cadena en un arreglo de caracteres.
+- String subString(int a, int b): Extrae la sub-cadena entre las posiciones a y b.
+- String subString(int desde): Extrae la sub-cadena desde la posición indicada.
+- Int indexOf(String cadena): Indican en que posición se encuentra el carácter o cadena indicado por primera vez, buscando desde el principio.
+- Int lastIndexOf(String cadena): Indican en que posición se encuentra el carácter o cadena indicado por primera vez, buscando desde el final.
+- Boolean startsWith(String prefijo): Dice si la cadena comienza con el prefijo indicado.
+- Boolean endsWith(String sufijo): Dice si la cadena comienza con el sufijo indicado.
+- String[] split(String patron): Divide la cadena en varias subcadenas utilizando el patron indicado como separador.
+
+
+CONCATENACION
+==================================================================================
+Precedencia de operadores: Si encuentra un string en el lado izquierdo asume que el resto es una cadena
+ya que las expresiones se van evaluando de izquierda a derecha.
+    System.out.println(detalle + numeroB + numeroA) = detalle105
+concat(): Método que permite concatenar 2 cadenas, da como resultado la cadena concatenada nueva
+ya que los string son inmutables. Al mismo los concat se pueden anidar.
+transform(): Otra forma de transformar, convertir o concatenar String de manera funcional usando "Lambda"
+o bloque de codigo
+

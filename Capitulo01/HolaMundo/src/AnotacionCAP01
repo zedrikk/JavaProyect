@@ -75,6 +75,8 @@ String(no primitivo)
 - Los caracteres de un String se codifican usando UNICODE
 - Son inmutables, cualquier método usado siempre devuelve una nueva instancia distinta al
   original con los cambios, el string original se mantiene.
+- El objeto string se crea la instancia a través de la literal
+    String curso = "Programación Java" == String curso = new String("Programación Java")
 COMPARAR
 - Con el operador == compara por referencia
 - Con el método equals() compara por valor
@@ -98,3 +100,15 @@ METODOS
 - Boolean startsWith(String prefijo): Dice si la cadena comienza con el prefijo indicado.
 - Boolean endsWith(String sufijo): Dice si la cadena comienza con el sufijo indicado.
 - String[] split(String patron): Divide la cadena en varias subcadenas utilizando el patron indicado como separador.
+
+
+CONCATENACION
+==================================================================================
+Precedencia de operadores: Si encuentra un string en el lado izquierdo asume que el resto es una cadena
+ya que las expresiones se van evaluando de izquierda a derecha.
+    System.out.println(detalle + numeroB + numeroA) = detalle105
+concat(): Método que permite concatenar 2 cadenas, da como resultado la cadena concatenada nueva
+ya que los string son inmutables. Al mismo los concat se pueden anidar.
+transform(): Otra forma de transformar, convertir o concatenar String de manera funcional usando "Lambda"
+o bloque de codigo
+
