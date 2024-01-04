@@ -113,5 +113,5 @@ transform(): Otra forma de transformar, convertir o concatenar String de manera 
 o bloque de codigo.
 
 System.currentTimeMillis(): Retorna la diferencia en milisegundos entre la fecha actual y 1970
-
+StringBuilder: Es mutable
 

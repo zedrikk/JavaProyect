@@ -110,5 +110,8 @@ ya que las expresiones se van evaluando de izquierda a derecha.
 concat(): Método que permite concatenar 2 cadenas, da como resultado la cadena concatenada nueva
 ya que los string son inmutables. Al mismo los concat se pueden anidar.
 transform(): Otra forma de transformar, convertir o concatenar String de manera funcional usando "Lambda"
-o bloque de codigo
+o bloque de codigo.
+
+System.currentTimeMillis(): Retorna la diferencia en milisegundos entre la fecha actual y 1970
+StringBuilder: Es mutable
 
